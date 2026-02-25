@@ -1,0 +1,9 @@
+{
+  "tests/playlist_tests.py::test_init_playlist": true,
+  "tests/playlist_tests.py::test_init_playlist_empty": true,
+  "tests/playlist_tests.py::test_insert_playlist": true,
+  "tests/playlist_tests.py::test_insert_empty_playlist": true,
+  "tests/playlist_tests.py::test_insert_playlist_multiple": true,
+  "tests/playlist_tests.py::test_delete_playlist": true,
+  "tests/playlist_tests.py::test_deleteplaylist_absent": true
+}

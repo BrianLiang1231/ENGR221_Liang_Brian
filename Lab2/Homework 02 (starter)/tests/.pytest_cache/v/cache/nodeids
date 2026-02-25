@@ -1,0 +1,19 @@
+[
+  "nodupes_tests.py::test_delete_nodupes",
+  "nodupes_tests.py::test_delete_nodupes_absent",
+  "nodupes_tests.py::test_init_nodupes",
+  "nodupes_tests.py::test_init_nodupes_dupes",
+  "nodupes_tests.py::test_insert_nodupes",
+  "nodupes_tests.py::test_insert_nodupes_dupes",
+  "nodupes_tests.py::test_insert_nodupes_empty",
+  "nodupes_tests.py::test_search_nodupes",
+  "nodupes_tests.py::test_search_nodupes_absent",
+  "nodupes_tests.py::test_traverse_nodupes",
+  "playlist_tests.py::test_delete_playlist",
+  "playlist_tests.py::test_deleteplaylist_absent",
+  "playlist_tests.py::test_init_playlist",
+  "playlist_tests.py::test_init_playlist_empty",
+  "playlist_tests.py::test_insert_empty_playlist",
+  "playlist_tests.py::test_insert_playlist",
+  "playlist_tests.py::test_insert_playlist_multiple"
+]
