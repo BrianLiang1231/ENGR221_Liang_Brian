@@ -1,8 +1,4 @@
-"""
-WRITE YOUR PROGRAM HEADER HERE
 
-Adapted from UCSD CSE12
-"""
 
 
 class MyHashMap:
@@ -12,9 +8,7 @@ class MyHashMap:
         self.size = 0
         self.buckets = [[] for _ in range(self.capacity)]
 
-    """
-    Resizes the self.buckets array when the load_factor is reached.
-    """
+    
     def resize(self):
         old_buckets = self.buckets
         self.capacity *= 2
@@ -28,13 +22,7 @@ class MyHashMap:
 
         self.size = old_size
 
-    """
-    Adds the specified key, value pair to the MyHashMap if
-    the key is not already in the MyHashMap. If adding a new key would
-    surpass the load_factor, resize the MyHashMap before adding the key.
-    Return true if successfully added to the MyHashMap.
-    Raise an exception if the key is None.
-    """
+    
     def put(self, key, value):
         if key is None:
             raise Exception("Key cannot be None")
@@ -51,13 +39,7 @@ class MyHashMap:
         self.size += 1
         return True
 
-    """
-    Replaces the value that maps to the given key if it is present.
-    Input: key is the key whose mapped value is being replaced.
-           newValue is the value to replace the existing value with.
-    Return true if the key was in this MyHashMap and replaced successfully.
-    Raise an exception if the key is None.
-    """
+   
     def replace(self, key, newValue):
         if key is None:
             raise Exception("Key cannot be None")
@@ -72,11 +54,7 @@ class MyHashMap:
 
         return False
 
-    """
-    Remove the entry corresponding to the given key.
-    Return true if an entry for the given key was removed.
-    Raise an exception if the key is None.
-    """
+    
     def remove(self, key):
         if key is None:
             raise Exception("Key cannot be None")
@@ -92,11 +70,7 @@ class MyHashMap:
 
         return False
 
-    """
-    Adds the key, value pair to the MyHashMap if it is not present.
-    Otherwise, replace the existing value for that key with the given value.
-    Raise an exception if the key is None.
-    """
+    
     def set(self, key, value):
         if key is None:
             raise Exception("Key cannot be None")
@@ -106,11 +80,7 @@ class MyHashMap:
         else:
             self.put(key, value)
 
-    """
-    Return the value of the specified key. If the key is not in the
-    MyHashMap, return None.
-    Raise an exception if the key is None.
-    """
+   
     def get(self, key):
         if key is None:
             raise Exception("Key cannot be None")
@@ -124,23 +94,15 @@ class MyHashMap:
 
         return None
 
-    """
-    Return the number of key, value pairs in this MyHashMap.
-    """
+   
     def get_size(self):
         return self.size
 
-    """
-    Return true if the MyHashMap contains no elements, and
-    false otherwise.
-    """
+    
     def isEmpty(self):
         return self.size == 0
 
-    """
-    Return true if the specified key is in this MyHashMap.
-    Raise an exception if the key is None.
-    """
+   
     def containsKey(self, key):
         if key is None:
             raise Exception("Key cannot be None")
@@ -154,10 +116,6 @@ class MyHashMap:
 
         return False
 
-    """
-    Return a list containing the keys of this MyHashMap.
-    If it is empty, return an empty list.
-    """
     def keys(self):
         key_list = []
 
